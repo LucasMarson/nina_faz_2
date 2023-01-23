@@ -17,7 +17,7 @@ export function Header() {
             hover:border-pink-500
           "
         >
-          Menssagem
+          Mensagem
         </Link>
         <Link
           href="#day"
