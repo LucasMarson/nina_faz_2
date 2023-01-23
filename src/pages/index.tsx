@@ -7,7 +7,7 @@ export default function Home() {
     <main className="bg-[#80E1F7] antialiased">
       <div className="flex flex-col w-full h-full">
         <div
-          className="w-full h-[90vh] bg-fixed bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
+          className="w-full h-[90vh] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
           style={{ backgroundImage: `url('/fundodomar.jpg')` }}
         >
           <div className="flex flex-col w-screen h-full items-center justify-end text-white">

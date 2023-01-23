@@ -1,25 +1,36 @@
 import { ModelStep } from "./ModelStep";
 
-type ConfirmData = {
-  message: string;
-};
+type UserData = {
+    escorts: string;
+    amounts: string;
+}
 
-type ConfirmFormProps = ConfirmData & {
-  updateFields: (fields: Partial<ConfirmData>) => void;
-};
+type UserFormProps = UserData & {
+    updateFields: (fields: Partial<UserData>) => void;
+}
 
-export function Step2({ message, updateFields }: ConfirmFormProps) {
+export function Step2({escorts, amounts, updateFields}: UserFormProps) {
+
   return (
-    <ModelStep title="Recado:">
+    <ModelStep title="Diga para o Organizador quantas pessoa comparesseram:">
       <div className="w-full">
-        <label className="flex flex-col font-medium text-md mb-3">Deixe um recadinho:</label>
-        <textarea
-          placeholder="Deixe um recadinho, prometo que o papai e a mamae vão ler."
-          value={message}
-          onChange={e => updateFields({message: e.target.value})}
-          className="rounded-xl w-full border-2 border-gray-300 py-3 px-5 shadow-sm"
-          cols={30}
-          rows={5}
+        <label className="flex flex-col font-medium text-md mb-3">Acompanhantes:</label>
+        <input
+          type="text"
+          placeholder="Digite o nome dos acompanhantes"
+          value={escorts}
+          onChange={e => updateFields({escorts: e.target.value})}
+          className="rounded-2xl w-full border-2 border-gray-300 py-3 px-5 shadow-sm"
+        />
+      </div>
+      <div className="w-full">
+        <label className="flex flex-col font-medium text-md mb-3">Quantos participantes:</label>
+        <input
+          type="number"
+          placeholder="Digite quantos participantes são?"
+          value={amounts}
+          onChange={e => updateFields({amounts: e.target.value})}
+          className="rounded-2xl w-full border-2 border-gray-300 py-3 px-5 shadow-sm"
         />
       </div>
     </ModelStep>

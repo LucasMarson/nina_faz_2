@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { Step1 } from "../../components/Form/Step1";
 import { Step2 } from "../../components/Form/Step2";
+import { Step3 } from "../../components/Form/Step3";
 import emailjs from "@emailjs/browser";
 import { useForm } from "../../hook/useForm";
 import { useRouter } from "next/router";
@@ -11,12 +12,16 @@ import { RiSendPlaneFill } from 'react-icons/ri';
 type FormData = {
   name: string;
   lastName: string;
+  escorts: string;
+  amounts: string;
   message: string;
 };
 
 const INITIAL_DATA: FormData = {
   name: "",
   lastName: "",
+  escorts: "",
+  amounts: "",
   message: "",
 };
 
@@ -33,8 +38,8 @@ export default function Presence() {
   const { stpes, currentStep, step, isFirstStep, isLastStep, back, next } =
     useForm([
       <Step1 key={1} {...data} updateFields={updateFields} />,
-      <div key={3}>hello</div>,
       <Step2 key={2} {...data} updateFields={updateFields} />,
+      <Step3 key={3} {...data} updateFields={updateFields} />,
     ]);
 
   function handlerSubmit(e: FormEvent) {
@@ -53,6 +58,8 @@ export default function Presence() {
         {
           name: { ...data }.name,
           lastName: { ...data }.lastName,
+          escorts: { ...data }.escorts,
+          amounts: { ...data }.amounts,
           message: { ...data }.message,
         },
         userId
