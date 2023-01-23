@@ -57,7 +57,7 @@ export default function Home() {
               className="mb-8"
             />
             <h1 className="text-4xl font-semibold mb-12 text-[#f96b9e] drop-shadow-[2px 2px 2px #05b0cc] shadow-black">
-              Menssagem da Nina
+              Mensagem da Nina
             </h1>
             <div className="flex flex-col gap-4 sm:w-[70%] text-center text-2xl">
               <span>
