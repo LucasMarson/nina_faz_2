@@ -18,8 +18,8 @@ export default function Home() {
               height={300}
               alt=""
             />
-            <h1 className="text-8xl font-black">Nina</h1>
-            <h4 className="text-2xl font-medium">2 anos</h4>
+            <h1 className="text-8xl font-bold">Nina</h1>
+            <h4 className="text-2xl font-bold text-black">2 anos</h4>
             <div>
               <svg
                 width={20}
@@ -60,7 +60,7 @@ export default function Home() {
             <h1 className="text-5xl font-semibold mb-12 text-[#f96b9e]">
               Mensagem da Nina
             </h1>
-            <div className="flex flex-col gap-4 sm:w-[70%] text-center text-2xl">
+            <div className="flex flex-col gap-4 sm:w-[70%] text-center text-2xl ">
               <span>
                 Meu aniversário está chegando e a turma do Baby Shark já está
                 preparada! 🦈
@@ -198,7 +198,7 @@ export default function Home() {
                     className="mb-8"
                   />
                   <div className="flex flex-col gap-4 text-center text-2xl">
-                    <h1 className="text-5xl items font-semibold mb-4 text-[#f96b9e]">
+                    <h1 className="text-5xl items font-bold mb-4 text-[#f96b9e]">
                       Confirmar Presença até
                     </h1>
                     <div
@@ -209,11 +209,6 @@ export default function Home() {
                         16/02/2023
                       </span>
                     </div>
-                    <span>Sábado, a partir de 16:3
-                      0</span>
-                    <span className="text-[26px]">
-                      A confirmação será encerrada no dia 16/02/2023
-                    </span>
                   </div>
                   <Link
                     href="/presence"

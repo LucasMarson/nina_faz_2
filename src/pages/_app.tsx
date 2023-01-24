@@ -1,16 +1,15 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Londrina_Solid } from '@next/font/google'
+import localFont from '@next/font/local'
 
-const londrinaSolid = Londrina_Solid ({
-  weight: ['400', '900'],
-  subsets: ['latin'],
-  variable: '--font-londrina',
+const LexendDeca = localFont ({
+  src: '../../public/fonts/LexendDeca.woff2',
 })
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${londrinaSolid.variable} font-sans`}>
+    <main className={LexendDeca.className}>
       <Component {...pageProps} />
     </main>
   )

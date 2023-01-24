@@ -18,9 +18,9 @@ export function Days({title, description, children}: DaysProps) {
         >
           {children}
         </svg>
-        <span className="text-5xl mb-6 text-white font-normal">{title}</span>
+        <span className="text-5xl mb-6 text-white font-bold">{title}</span>
       </div>
-      <span className="text-[#08336d] text-xl">
+      <span className="text-[#08336d] text-xl font-semibold">
         {description}
       </span>
     </div>

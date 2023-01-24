@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-londrina)', ...fontFamily.sans],
+        blackNo7: 'black-No-7'
       },
     },
   },

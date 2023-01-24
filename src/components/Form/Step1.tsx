@@ -14,7 +14,7 @@ export function Step1({name, lastName, updateFields}: UserFormProps) {
   return (
     <ModelStep title="Diga para o Organizador quem é você:">
       <div className="w-full">
-        <label className="flex flex-col font-medium text-md mb-3">Name:</label>
+        <label className="flex flex-col font-bold text-md mb-3">Nome:</label>
         <input
           type="text"
           placeholder="Digite seu nome"
@@ -24,7 +24,7 @@ export function Step1({name, lastName, updateFields}: UserFormProps) {
         />
       </div>
       <div className="w-full">
-        <label className="flex flex-col font-medium text-md mb-3">Sobrenome:</label>
+        <label className="flex flex-col font-bold text-md mb-3">Sobrenome:</label>
         <input
           type="text"
           placeholder="Digite seu sobrenome"
