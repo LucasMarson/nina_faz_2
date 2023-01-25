@@ -9,14 +9,12 @@ import { BsArrowLeftCircle } from 'react-icons/bs';
 import { RiSendPlaneFill } from 'react-icons/ri';
 
 type FormData = {
-  name: string;
-  lastName: string;
+  names: string;
   message: string;
 };
 
 const INITIAL_DATA: FormData = {
-  name: "",
-  lastName: "",
+  names: "",
   message: "",
 };
 
@@ -50,8 +48,7 @@ export default function Presence() {
         serviceId,
         templateId,
         {
-          name: { ...data }.name,
-          lastName: { ...data }.lastName,
+          name: { ...data }.names,
           message: { ...data }.message,
         },
         userId
@@ -81,7 +78,7 @@ export default function Presence() {
         <div className="flex w-full sm:px-32 items-center justify-center gap-6 mt-10">
           {!isFirstStep && (
             <button
-              className="p-4 w-full bg-black bg-opacity-10 rounded-xl"
+              className="p-4 w-full font-bold bg-black bg-opacity-10 rounded-xl"
               type="button"
               onClick={back}
             >
@@ -89,7 +86,7 @@ export default function Presence() {
             </button>
           )}
           <button
-            className="flex flex-row items-center gap-4 justify-center p-4 w-full text-center bg-[#80E1F7] rounded-xl"
+            className="flex flex-row items-center gap-4 justify-center font-bold p-4 w-full text-center bg-[#80E1F7] rounded-xl"
             type="submit"
           >
             {isLastStep ? "Enviar" : "Proximo"}

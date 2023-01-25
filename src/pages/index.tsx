@@ -13,13 +13,13 @@ export default function Home() {
         >
           <div className="flex flex-col w-screen h-full items-center justify-end text-white">
             <Image
-              src="/baby_shark_yellow.webp"
-              width={300}
-              height={300}
+              src="/nina.svg"
+              width={400}
+              height={400}
               alt=""
             />
             <h1 className="text-8xl font-bold">Nina</h1>
-            <h4 className="text-2xl font-bold text-black">2 anos</h4>
+            <h4 className="text-2xl font-bold">2 anos</h4>
             <div>
               <svg
                 width={20}
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <Header />
         <div
-          className="w-full h-[55px] sm:bg-auto bg-repeat-x bg-cover"
+          className="w-full h-[55px] sm:h-[70px] sm:bg-auto bg-repeat-x bg-cover"
           style={{ backgroundImage: `url(/pattern01.webp)` }}
         ></div>
         <div
@@ -57,19 +57,15 @@ export default function Home() {
               alt="Peixinho piscando"
               className="mb-8"
             />
-            <h1 className="text-5xl font-semibold mb-12 text-[#f96b9e]">
+            <h1 className="text-5xl font-semibold mb-12 text-center text-[#f96b9e]">
               Mensagem da Nina
             </h1>
-            <div className="flex flex-col gap-4 sm:w-[70%] text-center text-2xl ">
+            <div className="flex flex-col sm:w-[50%] text-center text-2xl ">
               <span>
                 Meu aniversário está chegando e a turma do Baby Shark já está
-                preparada! 🦈
+                preparada. Venha fazer parte deste dia especial e curtir este momento no
+                fundo do mar. Conto com você lá! 🌊🦈
               </span>
-              <span>
-                Venha fazer parte deste dia especial e curtir este momento no
-                fundo do mar! 🌊
-              </span>
-              <span>Conto com você lá!</span>
             </div>
           </div>
         </div>
