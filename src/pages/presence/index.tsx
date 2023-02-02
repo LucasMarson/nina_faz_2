@@ -48,7 +48,7 @@ export default function Presence() {
         serviceId,
         templateId,
         {
-          name: { ...data }.names,
+          names: { ...data }.names,
           message: { ...data }.message,
         },
         userId
